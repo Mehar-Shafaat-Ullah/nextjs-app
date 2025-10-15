@@ -1,4 +1,4 @@
-Next.js/TypeScript Static Web App: Project Title
+Next.js/TypeScript Static Web App:
 This project is a modern, static web application built using Next.js and TypeScript for robust development and a superior developer experience.
 
 It is deployed to production using a fully automated Continuous Integration/Continuous Deployment (CI/CD) pipeline on AWS, ensuring fast, reliable, and consistent updates.
