@@ -11,6 +11,24 @@ phases:
       # This command runs your static export build, creating the 'out' directory
       - echo "Starting Next.js static export build..."
       - npm run build
+
+  post_build:
+    commands:
+      # 1. Check if the AWS CLI is installed
+      - aws --version
+      
+      # 2. Upload the built files to S3 (This is often done in a separate CodePipeline stage, 
+      #    but sometimes needs to be done here if S3 deploy stage is not configured for invalidation)
+      # Since your pipeline uses a separate S3 deploy action, this is typically not needed here.
+      # However, we must ensure the invalidation runs after the deployment is complete.
+
+      # 3. CRITICAL: Invalidate the CloudFront Cache
+      # This command tells CloudFront to clear the cache for the entire distribution (/*), 
+      # ensuring users see the latest deployed changes immediately.
+      # You MUST use your actual Distribution ID (E1DYWRI46M8TI).
+      - echo "Starting CloudFront Cache Invalidation for E1DYWRI46M8TI..."
+      - aws cloudfront create-invalidation --distribution-id E1DYWRI46M8TI --paths "/*"
+      - echo "CloudFront invalidation command successfully issued."
       
 artifacts:
   # The 'out' directory contains the final static HTML and asset files 
