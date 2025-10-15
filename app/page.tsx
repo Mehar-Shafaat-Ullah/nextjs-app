@@ -15,7 +15,7 @@ export default function Home() {
       
       {/* Subtitle / Status Message */}
       <p className="text-xl text-gray-600 max-w-2xl mb-8">
-        This page was automatically builtttt by **AWS CodeBuild** and deployed to **Amazon S3** via **CodePipeline**.
+        This page was automatically builtttt by **AWSAWS CodeBuild** and deployed to **Amazon S3** via **CodePipeline**.
       </p>
       
       {/* Instructions */}
