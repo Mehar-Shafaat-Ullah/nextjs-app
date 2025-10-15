@@ -27,7 +27,7 @@ Git
 1. Clone the Repository
 Clone the project to your local directory:
 
-git clone [https://github.com/YourUsername/Your-Repository-Name.git](https://github.com/YourUsername/Your-Repository-Name.git)
+git clone (https://github.com/Mehar-Shafaat-Ullah/nextjs-app.git)
 cd Your-Repository-Name
 
 2. Install Dependencies
