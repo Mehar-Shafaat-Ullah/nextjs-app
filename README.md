@@ -88,19 +88,4 @@ Deploy Stage: The static files from the build are automatically copied to the S3
 
 Cache Invalidation: CloudFront is automatically triggered to invalidate its old cache, ensuring users see the latest deployed version immediately.
 
-🛠️ Commands for GitHub Push
-Before your teacher checks your work, you can push all your local changes (including this great README) to GitHub:
 
-Add all changes:
-
-git add .
-
-Commit your changes:
-
-git commit -m "feat: Final project files and complete AWS README"
-
-Push to the remote repository:
-
-git push origin main 
-
-(Use master instead of main if that's your branch name.)
