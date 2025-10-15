@@ -8,7 +8,7 @@ Frontend: Next.js
 
 Language: TypeScript
 
-Styling: [Add your styling method here, e.g., Tailwind CSS, Module CSS, Emotion]
+
 
 Deployment: AWS CodePipeline, CodeBuild, S3, and CloudFront
 
